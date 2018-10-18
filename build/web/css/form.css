@@ -1,0 +1,107 @@
+input[type="text"], input[type="password"] {
+
+    background: #fff;
+    padding: 3px;
+    border: 1px solid #555;
+    /*border-radius: 3px;*/
+    
+}
+
+.input-text-300px {
+
+    width: 300px;
+
+}
+
+.input-text-80px {
+
+    width: 80px;
+}
+
+.input-text-60px {
+
+    /*font-weight: bold;*/
+    width: 45px;
+    border-radius: 3px;
+}
+
+.input-text-200px {
+
+    width: 200px;
+}
+
+.input-text-40px {
+
+    width: 40px;
+}
+.input-text-three-letters {
+
+    width: 24px;
+}
+.input-text-four-letters {
+
+    width: 32px;
+}
+
+.input-password {
+
+	width: 200px;
+	background: #fafafa;
+	padding: 2px;
+	border: 1px solid #555;
+
+}
+
+.input-text, .input-password {
+
+	width: 200px;
+	background: #fafafa;
+	padding: 2px;
+	border: 1px solid #555;
+
+}
+/*
+input[type="text"], input[type="password"] {
+}
+*/
+.small-button {
+    font-weight: normal;
+    padding: 0px 8px 0px 8px;
+}
+
+.large-button {
+        color: #111;
+	padding: 8px;
+	font-weight: bold;
+	width: 180px;
+        margin-right: 5px;
+        margin-top: 8px;
+        margin-left: -2px;
+        /*background: url("../images/rarr.png");*/
+        /*border-radius: 8px;*/
+        /*border-color: blue;*/
+
+}
+.large-button:hover {
+    
+    /*cursor: pointer;*/
+}
+
+.radioLabel:hover {
+    cursor: pointer;
+}
+
+select {
+ /*   width: 350px; */
+}
+
+/*
+.large-button:hover {
+
+    background-color: #f1cf5b;
+    border: 1px solid #dec;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+*/
+

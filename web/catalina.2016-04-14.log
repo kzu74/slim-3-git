@@ -1,0 +1,100 @@
+14-Apr-2016 10:24:47.097 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+14-Apr-2016 10:24:47.101 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+14-Apr-2016 10:24:47.113 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+14-Apr-2016 10:24:48.246 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:24:48.303 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Apr-2016 10:24:48.307 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 6475 ms
+14-Apr-2016 10:24:48.396 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+14-Apr-2016 10:24:48.396 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.27
+14-Apr-2016 10:24:48.437 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/ROOT.war
+14-Apr-2016 10:24:56.115 INFO [digidieetti.net-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [4,312] milliseconds.
+14-Apr-2016 10:24:56.663 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/ROOT.war has finished in 8,225 ms
+14-Apr-2016 10:24:56.667 WARNING [main] org.apache.catalina.mapper.MapperListener.findDefaultHost Unknown default host [localhost] for service [StandardService[Catalina]]
+14-Apr-2016 10:24:56.671 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:24:56.683 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8375 ms
+14-Apr-2016 10:25:21.972 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+14-Apr-2016 10:25:21.974 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:25:22.031 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+14-Apr-2016 10:25:22.455 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:25:22.457 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:25:24.889 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+14-Apr-2016 10:25:24.892 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+14-Apr-2016 10:25:24.947 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '5' did not find a matching property.
+14-Apr-2016 10:25:24.947 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'unpackWARs' to 'true' did not find a matching property.
+14-Apr-2016 10:25:24.948 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'autoDeploy' to 'true' did not find a matching property.
+14-Apr-2016 10:25:24.987 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+14-Apr-2016 10:25:25.327 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:25:25.359 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Apr-2016 10:25:25.364 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1791 ms
+14-Apr-2016 10:25:25.417 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+14-Apr-2016 10:25:25.417 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.27
+14-Apr-2016 10:25:32.697 INFO [digidieetti.net-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2016 10:25:34.198 INFO [digidieetti.net-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+14-Apr-2016 10:25:36.227 INFO [digidieetti.net-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'probe'
+14-Apr-2016 10:25:39.748 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/ROOT.war
+14-Apr-2016 10:25:39.789 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/ROOT.war has finished in 40 ms
+14-Apr-2016 10:25:39.798 WARNING [main] org.apache.catalina.mapper.MapperListener.findDefaultHost Unknown default host [localhost] for service [StandardService[Catalina]]
+14-Apr-2016 10:25:39.811 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:25:39.821 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 14456 ms
+14-Apr-2016 10:29:49.855 INFO [digidieetti.net-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war
+14-Apr-2016 10:29:51.246 INFO [digidieetti.net-startStop-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2016 10:29:51.253 INFO [digidieetti.net-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war has finished in 1,399 ms
+14-Apr-2016 10:36:41.476 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/slim-3]
+14-Apr-2016 10:36:41.520 INFO [digidieetti.net-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war
+14-Apr-2016 10:36:42.452 INFO [digidieetti.net-startStop-3] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2016 10:36:42.461 INFO [digidieetti.net-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war has finished in 940 ms
+14-Apr-2016 10:40:20.054 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+14-Apr-2016 10:40:20.055 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:40:20.112 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+14-Apr-2016 10:40:20.130 INFO [digidieetti.net-startStop-4] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'probe'
+14-Apr-2016 10:40:20.285 INFO [digidieetti.net-startStop-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+14-Apr-2016 10:40:20.305 WARNING [digidieetti.net-startStop-4] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [probe] appears to have started a thread named [scheduler_Worker-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+14-Apr-2016 10:40:20.306 WARNING [digidieetti.net-startStop-4] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [probe] appears to have started a thread named [scheduler_Worker-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:519)
+14-Apr-2016 10:40:20.326 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:40:20.344 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:40:22.860 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+14-Apr-2016 10:40:22.863 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+14-Apr-2016 10:40:22.929 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '5' did not find a matching property.
+14-Apr-2016 10:40:22.954 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+14-Apr-2016 10:40:23.221 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:40:23.260 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Apr-2016 10:40:23.266 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1390 ms
+14-Apr-2016 10:40:23.326 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+14-Apr-2016 10:40:23.327 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.27
+14-Apr-2016 10:40:24.127 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war
+14-Apr-2016 10:40:25.639 INFO [digidieetti.net-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2016 10:40:25.694 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war has finished in 1,559 ms
+14-Apr-2016 10:40:25.695 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/ROOT.war
+14-Apr-2016 10:40:25.755 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/ROOT.war has finished in 60 ms
+14-Apr-2016 10:40:25.759 WARNING [main] org.apache.catalina.mapper.MapperListener.findDefaultHost Unknown default host [localhost] for service [StandardService[Catalina]]
+14-Apr-2016 10:40:25.763 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:40:25.779 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2512 ms
+14-Apr-2016 10:40:53.626 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+14-Apr-2016 10:40:53.627 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:40:53.683 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+14-Apr-2016 10:40:53.724 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:40:53.726 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:40:55.881 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+14-Apr-2016 10:40:55.884 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+14-Apr-2016 10:40:55.936 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '5' did not find a matching property.
+14-Apr-2016 10:40:55.964 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+14-Apr-2016 10:40:56.185 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:40:56.211 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Apr-2016 10:40:56.215 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1135 ms
+14-Apr-2016 10:40:56.260 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+14-Apr-2016 10:40:56.260 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.27
+14-Apr-2016 10:40:56.882 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war
+14-Apr-2016 10:40:58.397 INFO [digidieetti.net-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2016 10:40:58.415 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war has finished in 1,532 ms
+14-Apr-2016 10:40:58.416 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/ROOT.war
+14-Apr-2016 10:40:58.469 INFO [digidieetti.net-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/ROOT.war has finished in 53 ms
+14-Apr-2016 10:40:58.473 WARNING [main] org.apache.catalina.mapper.MapperListener.findDefaultHost Unknown default host [localhost] for service [StandardService[Catalina]]
+14-Apr-2016 10:40:58.476 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-12919"]
+14-Apr-2016 10:40:58.492 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2276 ms
+14-Apr-2016 10:42:25.633 INFO [http-nio-12919-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=digidieetti.net'
+14-Apr-2016 10:42:25.634 INFO [http-nio-12919-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+14-Apr-2016 10:42:25.636 INFO [http-nio-12919-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'digidieetti.net'

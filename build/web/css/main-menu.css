@@ -1,0 +1,103 @@
+.main-menu {
+	float: left;
+	width: 920px;
+        margin: 15px;
+        margin-top: 8px;
+	height: 38px;
+	border: 1px solid #8c9868;
+        border-radius: 6px;
+	text-align: left;
+        background: url('../images/main-menu.png');
+	font-size: 12px;
+        font-weight: bold;
+}
+
+.main-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu li {
+	/* this is to make the submenus position relative to this li */
+	position: relative;
+	float: left;
+        
+}
+
+.main-menu li.li-left {
+    border-right: solid 1px #ddd;
+    height: 38px;
+    background: url('../images/main-menu.png');
+}
+
+.main-menu ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+	height: 38px;
+	line-height: 37px;
+	padding: 0 14px 0 14px;
+	display: block;
+	color: #fff;
+        background: url('../images/main-menu.png');
+        border-right: solid 1px #ddd;
+        text-shadow: 1px 1px 2px #333;
+	/*letter-spacing: 0.08em;*/
+}
+
+.main-menu li:hover > ul { /* this made them visible */
+    visibility: visible;
+    font-weight: bold;  
+}
+
+.main-menu ul li a:hover {
+	text-decoration: none;
+	background: #c6d599;
+}
+
+.main-menu ul ul {
+
+    position: absolute;
+    left: -1px; 
+    top: 38px;
+    visibility: hidden;
+    background: #c0cf91;
+    display:block;  
+    z-index:1000;
+    border-top: solid 1px #8c9868; 
+    font-weight: bold;
+    
+}
+
+.main-menu ul ul a { 
+    color: white;
+    font-weight: bold;
+    white-space: normal; 
+    display: block;
+    width: 200px; 
+    height: 32px;
+    line-height:2.9em; 
+    padding:4px 16px 4px 16px;
+    border-right:solid 1px #8c9868; 
+    border-left:solid 1px #8c9868;
+    border-bottom: solid 1px #8c9868;
+    background: #9aa675;
+    
+}
+
+.main-menu ul ul a:hover { 
+
+    background: #c6d599; 
+    border-bottom: solid 1px #8c9868; 
+    font-weight: bold;
+    
+/*    margin-bottom:-1px; */
+}	
+
+.main-menu ul ul ul {
+    position: absolute;
+    left: 12.8em; top:-1px;;
+    visibility: hidden;
+    background-color: #ebe8fd;
+}

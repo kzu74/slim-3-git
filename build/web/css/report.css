@@ -1,0 +1,132 @@
+.ex-all-wrapper {
+
+    float: left;
+    width: 810px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.ex-wrapper {
+    float: left;
+    height: 50px;
+    width: 810px;
+    margin-bottom: 10px;
+}
+
+.icon-div {
+    float: left;
+    margin-right: 8px;
+    clear: left;
+}
+
+.left-side {
+    width: 400px;
+    float: left;
+    overflow: hidden; /* täytyy olla myös height */
+    
+}
+
+.right-side {
+    font-size: 11px;
+    margin-top: -3px;
+    float: right;
+    width: 350px;
+    height: 50px;
+    text-align: left;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+.clear-date-header {
+	clear: both;
+	float: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 11px;
+        font-weight: bold
+}
+
+.name-header {
+	/*clear: left;*/
+        width: 400px;
+        height: 20px;
+        overflow: hidden;
+	float: left;
+        margin-top: 0px;
+        margin-bottom: 8px;
+        text-align: left;
+
+}
+
+.ex-name-link {
+    
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.ex-name-link:hover {
+    
+    text-decoration: underline;
+}
+
+.ex-comments-link {
+    
+    color: #333;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.ex-comments-link:hover {
+    
+    text-decoration: underline;
+}
+
+.data-div {
+    width: 400px;
+    height: 14px;
+    overflow: hidden;
+    float: left;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-size: 11px;
+}
+
+.date-header {
+    color: #333;
+    font-weight: bold;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.date-header:hover {
+    text-decoration: underline;
+}
+
+.data-table {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.hover-data {
+    overflow: hidden;
+    float: left;
+    clear: left;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    
+}
+
+

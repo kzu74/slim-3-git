@@ -1,0 +1,341 @@
+table, list-table {
+    padding: 7px;
+    float: left;
+    width: 910px;
+    border-radius: 6px;
+    background: #fff0c6;
+}
+
+.list-table-white {
+    /*padding: 7px;*/
+    
+    float: left;
+    width: 910px;
+    /*border-radius: 4px;*/
+    background: #fff;
+    border: 0px;
+    
+}
+
+.list-table-white tr {
+    /*float: left;*/
+    border-radius: 5px;    
+    border: 0px;    
+    background: #fff;
+}
+
+.list-table-white tr:hover {
+/*    background: #fff0c6;*/
+    background: #abd7dd;
+    cursor: pointer;
+    /*border-radius: 4px;    */
+}
+
+.list-table-white td {
+    padding-right: 7px;
+    padding-left: 7px;
+    border: 0px;
+}
+
+/*
+.list-table-white a:hover {
+    background: #fae;
+    display:block;
+    height:100%;
+    width:100%;    
+}
+*/
+
+.show-all-table {
+    background: #fff;
+    
+}
+.show-all-table td {
+    float: left;
+}
+
+
+.summary-table {
+    
+    padding: 7px;
+    float: left;
+    width: 910px;
+    border-radius: 6px;
+    border: 3px solid #e8e8e8;
+    background: #fbf5d2;
+}
+
+.tr-list-hover-color {}
+
+.tr-list-hover-color:hover {
+    background: #faf;
+}
+
+.edit-icon {
+    margin-bottom: -3px;
+}
+
+td.tooltip-td span {
+    z-index:10;
+    display:none; 
+    padding:10px;
+    margin-top:-20px; 
+    margin-left:14px;
+    /*width:230px;*/ 
+    line-height:20px;
+    
+}
+td.tooltip-td:hover span {
+    display:inline;
+    position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0;}
+/*CSS3 extras*/
+td.tooltip-td span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+.callout {z-index:20;position:absolute;top:17px;border:0;left:-12px;}
+
+a.tooltip { color: olive; text-decoration: none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+
+/*
+a.tooltip span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:10px;
+    width:300px; line-height:16px;
+}
+a.tooltip:hover span {
+    display:inline;
+    position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0;
+}
+*/
+
+/*CSS3 extras*/
+/*
+a.tooltip span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+*/
+
+
+    
+
+
+
+
+
+.pop-link span {
+    z-index:10;
+    display:none; 
+    padding: 20px;
+    margin-top:-30px; 
+    margin-left:28px;
+    width:300px; 
+    line-height:16px;
+}
+
+
+.pop-link:hover span {
+    display:inline; 
+    position:absolute;
+    /*position: relative;
+    top: 10px;
+    left: 50px;*/
+    color:#111;
+    border:1px solid #DCA; 
+    background:#fffAF0;
+}
+
+/*CSS3 extras*/
+.pop-link span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+
+
+.form-table {
+    
+    padding: 7px;
+    float: left;
+    width: 910px;
+    border-radius: 6px;
+    border: 3px solid #e2d8d8;
+    /*background: #fff9e8 url('../images/summary-table-bg.png') repeat-x;*/
+    background: #fdecc2;
+    
+}
+
+.summary-table th {
+    font-weight: bold;
+    text-align: left;
+    padding: 7px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.summary-table .tr-header {
+    font-weight: bold;
+    text-align: left;
+    padding: 7px;
+    padding-bottom: 20px;
+    height: 40px;
+}
+
+.ex-table { 
+    /*background: #fff;*/
+    width: 600px;
+    padding-top: 0px;
+    
+
+}
+
+.innerTable {
+    width: 100%;
+    padding: 0px;
+    float: left;
+}
+/*
+.list-table tr:hover  {
+    background: #e8edd8;
+}
+*/
+
+.td-desc {
+    
+    line-height: 24px;
+}
+
+.trColoured {
+/*    background: #f1f0e9;*/
+/*    background: #fde6a8;*/
+    /*background: #ffe9af;*/
+    background: #fcfcfc;
+}
+
+.trNormal {
+   background: #fff0c6;    
+}
+
+.trActive {
+   background: #bcd3e7;    
+}
+.trHover {
+   cursor: pointer;
+   /*background: #e8edd8;    */
+}
+
+table tr {
+    height: 30px;
+}
+
+.table-header {
+    
+    font-size: 22px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    padding-top: 15px;
+}
+.button-table {
+    
+    margin-top: -20px;
+    padding: 0px;
+    background: #dce1e8;
+}
+
+.button-table tr td { 
+    padding-bottom: 5px;
+}
+
+.testbg {
+    
+    background: #faf;
+}
+
+.btn-table { /* for div */
+    margin: 0px;
+    background: #faf;
+}
+
+table td {
+    text-align: left;
+    padding: 5px;
+}
+
+.td-name {
+    width: 500px;
+}
+
+.td-button {
+  /*  width: 120px;*/
+    text-align: left;
+}
+
+.td-50px {
+    width: 50px;
+}
+.td-60px {
+    width: 60px;
+}
+.td-70px {
+    width: 70px;
+}
+.td-80px {
+    width: 80px;
+}
+.td-90px {
+    width: 90px;
+}
+
+.td-100px {
+    width: 100px;
+}
+.td-120px {
+    width: 120px;
+}
+
+.td-120-up-px {
+    width: 120px;
+    vertical-align: text-top;
+    line-height: 24px; /* same as td-desc */
+}
+
+
+
+.td-150px {
+    width: 150px;
+}
+
+.td-200px {
+    width: 300px;
+}
+.td-220px {
+    width: 300px;
+}
+.td-250px {
+    width: 300px;
+}
+
+
+.td-300px {
+    width: 300px;
+}
+
+.td-350px {
+    width: 350px;
+}
+
+.td-400px {
+    width: 400px;
+}
+
+.td-500px {
+    width: 500px;
+}

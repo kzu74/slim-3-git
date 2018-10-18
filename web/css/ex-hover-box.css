@@ -1,0 +1,58 @@
+.ex-hover-box {
+    
+    position: absolute;
+    width: 470px;
+    height: 440px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    display: none;
+    z-index: 1000;
+    background: #fbf5d2;
+/*    background: url('../images/ex-hover-box-bg.png');*/
+
+    text-align: left;
+    
+}
+
+.hover-header-area {
+    height: 50px;
+}
+.hover-header-right-area {
+    float: left;
+    width: 414px;
+}
+
+.hover-content-area {
+    width: 450px;
+    padding: 10px;
+    height: 300px;
+    margin-top: 20px;
+    clear: left;
+    border-radius: 8px;
+    background: #fff;
+    overflow-y: auto;
+    
+}
+
+.hover-button-area {
+    width: 100%;
+    padding-top: 5px;
+    height: 50px;
+    
+}
+
+.hover-header {
+    float: left;
+    font-size: 16px;
+}
+
+.hover-power {
+    height: 14px;
+    margin-top: 9px;
+    overflow: hidden;
+    float: left;
+    text-align: left;
+    font-size: 11px;
+}
+

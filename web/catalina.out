@@ -1,0 +1,302 @@
+     java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+ java.lang.Thread.run(Thread.java:745)
+22-Apr-2016 09:39:05.452 WARNING [http-nio-12919-exec-57] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [slim-3] appears to have started a thread named [BoneCP-pool-watch-thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:374)
+ com.jolbox.bonecp.PoolWatchThread.run(PoolWatchThread.java:77)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+ java.lang.Thread.run(Thread.java:745)
+22-Apr-2016 09:39:05.455 SEVERE [http-nio-12919-exec-57] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [slim-3] created a ThreadLocal with key of type [jsr166y.ThreadLocalRandom$1] (value [jsr166y.ThreadLocalRandom$1@35af9c7b]) and a value of type [jsr166y.ThreadLocalRandom] (value [jsr166y.ThreadLocalRandom@1c4a6ac6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+22-Apr-2016 09:39:05.456 SEVERE [http-nio-12919-exec-57] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [slim-3] created a ThreadLocal with key of type [jsr166y.ThreadLocalRandom$1] (value [jsr166y.ThreadLocalRandom$1@35af9c7b]) and a value of type [jsr166y.ThreadLocalRandom] (value [jsr166y.ThreadLocalRandom@59a7fbac]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+22-Apr-2016 09:39:05.456 SEVERE [http-nio-12919-exec-57] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [slim-3] created a ThreadLocal with key of type [jsr166y.ThreadLocalRandom$1] (value [jsr166y.ThreadLocalRandom$1@35af9c7b]) and a value of type [jsr166y.ThreadLocalRandom] (value [jsr166y.ThreadLocalRandom@237c0730]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+22-Apr-2016 09:39:05.456 SEVERE [http-nio-12919-exec-57] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [slim-3] created a ThreadLocal with key of type [jsr166y.ThreadLocalRandom$1] (value [jsr166y.ThreadLocalRandom$1@35af9c7b]) and a value of type [jsr166y.ThreadLocalRandom] (value [jsr166y.ThreadLocalRandom@23bbf283]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+22-Apr-2016 09:39:10.752 INFO [http-nio-12919-exec-57] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/slim-3]
+22-Apr-2016 09:39:10.876 INFO [http-nio-12919-exec-57] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'digidieetti.net'
+22-Apr-2016 09:39:18.301 INFO [http-nio-12919-exec-60] org.apache.catalina.core.ApplicationContext.log HTMLManager: install: Installing web application '/' from 'null'
+22-Apr-2016 09:39:18.302 INFO [http-nio-12919-exec-60] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'digidieetti.net'
+22-Apr-2016 09:39:36.780 INFO [http-nio-12919-exec-55] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war
+22-Apr-2016 09:39:37.902 INFO [http-nio-12919-exec-55] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Apr-2016 09:39:37.907 INFO [http-nio-12919-exec-55] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war has finished in 1,127 ms
+22-Apr-2016 09:39:37.908 INFO [http-nio-12919-exec-55] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'digidieetti.net'
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+java.sql.SQLException: Unable to open a test connection to the given database. JDBC url = jdbc:mysql://localhost/kaitsu74_slim?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&maxReconnects=10, username = root. Terminating connection pool. Original Exception: ------
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 10 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:984)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:723)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:256)
+	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:305)
+	at net.slimmer.dao.DataSource.<init>(DataSource.java:45)
+	at net.slimmer.dao.DataSource.getInstance(DataSource.java:63)
+	at net.slimmer.servlet.AppFilter.openConnection(AppFilter.java:175)
+	at net.slimmer.servlet.AppFilter.doFilter(AppFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:911)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3953)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2198)
+	... 34 more
+------
+
+	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:312)
+	at net.slimmer.dao.DataSource.<init>(DataSource.java:45)
+	at net.slimmer.dao.DataSource.getInstance(DataSource.java:63)
+	at net.slimmer.servlet.AppFilter.openConnection(AppFilter.java:175)
+	at net.slimmer.servlet.AppFilter.doFilter(AppFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 10 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:984)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:723)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:256)
+	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:305)
+	... 21 more
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3515)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3447)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:911)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3953)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2198)
+	... 34 more
+TRACE: APPFILTER ROLLBACK CONN == null FROM net.slimmer.servlet.AppFilter
+TRACE: MESSAGE == null FROM net.slimmer.servlet.AppFilter
+java.lang.NullPointerException
+	at net.slimmer.dao.DataSource.getConnection(DataSource.java:75)
+	at net.slimmer.servlet.AppFilter.openConnection(AppFilter.java:175)
+	at net.slimmer.servlet.AppFilter.doFilter(AppFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+TRACE: APPFILTER FINALLY AFTER CLOSE CONN == null FROM net.slimmer.servlet.AppFilter
+TRACE: APPFILTER ROLLBACK CONN == null FROM net.slimmer.servlet.AppFilter
+TRACE: MESSAGE == null FROM net.slimmer.servlet.AppFilter
+java.lang.NullPointerException
+	at net.slimmer.dao.DataSource.getConnection(DataSource.java:75)
+	at net.slimmer.servlet.AppFilter.openConnection(AppFilter.java:175)
+	at net.slimmer.servlet.AppFilter.doFilter(AppFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+TRACE: APPFILTER FINALLY AFTER CLOSE CONN == null FROM net.slimmer.servlet.AppFilter
+TRACE: APPFILTER ROLLBACK CONN == null FROM net.slimmer.servlet.AppFilter
+TRACE: MESSAGE == null FROM net.slimmer.servlet.AppFilter
+java.lang.NullPointerException
+	at net.slimmer.dao.DataSource.getConnection(DataSource.java:75)
+	at net.slimmer.servlet.AppFilter.openConnection(AppFilter.java:175)
+	at net.slimmer.servlet.AppFilter.doFilter(AppFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+TRACE: APPFILTER FINALLY AFTER CLOSE CONN == null FROM net.slimmer.servlet.AppFilter
+22-Apr-2016 09:41:16.494 INFO [http-nio-12919-exec-63] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/slim-3'
+22-Apr-2016 09:41:16.513 WARNING [http-nio-12919-exec-63] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [slim-3] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+22-Apr-2016 09:41:16.514 WARNING [http-nio-12919-exec-63] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [slim-3] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:503)
+ java.util.TimerThread.mainLoop(Timer.java:526)
+ java.util.TimerThread.run(Timer.java:505)
+22-Apr-2016 09:41:17.039 INFO [http-nio-12919-exec-63] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/slim-3]
+22-Apr-2016 09:41:17.040 INFO [http-nio-12919-exec-63] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'digidieetti.net'
+22-Apr-2016 09:41:32.403 INFO [http-nio-12919-exec-61] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war
+22-Apr-2016 09:41:33.198 INFO [http-nio-12919-exec-61] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Apr-2016 09:41:33.203 INFO [http-nio-12919-exec-61] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/kaitsu74/jvm/apache-tomcat-8.0.27/domains/digidieetti.net/slim-3.war has finished in 800 ms
+22-Apr-2016 09:41:33.204 INFO [http-nio-12919-exec-61] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'digidieetti.net'
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+TRACE: BONE CP IN DATASOURCE == com.jolbox.bonecp.BoneCP@5fa61e1a FROM net.slimmer.dao.DataSource
+TRACE: BEFORE getConnection().............................................. FROM net.slimmer.dao.DataSource
+TRACE: getTotalCreatedConnections() == 20 FROM net.slimmer.dao.DataSource
+TRACE: getTotalFree() == 20 FROM net.slimmer.dao.DataSource
+TRACE: getTotalLeased() == 0 FROM net.slimmer.dao.DataSource
+TRACE:  FROM net.slimmer.dao.DataSource
+TRACE: AFTER getConnection()............................................... FROM net.slimmer.dao.DataSource
+TRACE: getTotalCreatedConnections() == 20 FROM net.slimmer.dao.DataSource
+TRACE: getTotalFree() == 19 FROM net.slimmer.dao.DataSource
+TRACE: getTotalLeased() == 1 FROM net.slimmer.dao.DataSource
+TRACE:  FROM net.slimmer.dao.DataSource
+TRACE: APPFILTER TRY CONN == com.jolbox.bonecp.ConnectionHandle@13026e05 FROM net.slimmer.servlet.AppFilter
+TRACE: email == kaitsu.email@gmail.com FROM 
+TRACE: pass == kaitsu FROM 
+TRACE: User == net.slimmer.model.User@49e7ff7e FROM 
+TRACE: APPFILTER FINALLY AFTER CLOSE CONN == com.jolbox.bonecp.ConnectionHandle@13026e05 FROM net.slimmer.servlet.AppFilter
+TRACE: BEFORE getConnection().............................................. FROM net.slimmer.dao.DataSource
+TRACE: getTotalCreatedConnections() == 25 FROM net.slimmer.dao.DataSource
+TRACE: getTotalFree() == 25 FROM net.slimmer.dao.DataSource
+TRACE: getTotalLeased() == 0 FROM net.slimmer.dao.DataSource
+TRACE:  FROM net.slimmer.dao.DataSource
+TRACE: AFTER getConnection()............................................... FROM net.slimmer.dao.DataSource
+TRACE: getTotalCreatedConnections() == 25 FROM net.slimmer.dao.DataSource
+TRACE: getTotalFree() == 24 FROM net.slimmer.dao.DataSource
+TRACE: getTotalLeased() == 1 FROM net.slimmer.dao.DataSource
+TRACE:  FROM net.slimmer.dao.DataSource
+TRACE: APPFILTER TRY CONN == com.jolbox.bonecp.ConnectionHandle@1411ef41 FROM net.slimmer.servlet.AppFilter
+To
+com.sun.mail.smtp.SMTPSendFailedException: 501 <kaitsu74>: sender address must contain a domain
+;
+  nested exception is:
+	com.sun.mail.smtp.SMTPSenderFailedException: 501 <kaitsu74>: sender address must contain a domain
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2057)
+	at com.sun.mail.smtp.SMTPTransport.mailFrom(SMTPTransport.java:1580)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1097)
+	at app.commons.util.SendMail.send(SendMail.java:57)
+	at net.slimmer.servlet.EmailServlet.processRequest(EmailServlet.java:46)
+	at net.slimmer.servlet.EmailServlet.doGet(EmailServlet.java:73)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at net.slimmer.servlet.AppFilter.doFilter(AppFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.sun.mail.smtp.SMTPSenderFailedException: 501 <kaitsu74>: sender address must contain a domain
+
+	at com.sun.mail.smtp.SMTPTransport.mailFrom(SMTPTransport.java:1587)
+	... 29 more
+TRACE: APPFILTER FINALLY AFTER CLOSE CONN == com.jolbox.bonecp.ConnectionHandle@1411ef41 FROM net.slimmer.servlet.AppFilter
+
+    
